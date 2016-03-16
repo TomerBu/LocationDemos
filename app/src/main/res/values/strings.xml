@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LocationDemos</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="permission_gps_rationale">We need your location to help you find places around you :-)</string>
+    <string name="button_allow">Sure</string>
+    <string name="button_deny">Later</string>
+    <string name="permission_gps_denied">No permission... No Places</string>
+    <string name="permission_gps_neverask">Permission Denied, please visit settings</string>
+</resources>

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:background="#ff0"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:context="tomerbu.edu.locationdemos.MapsActivity" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Place Here"
+            />
+
+        <FrameLayout
+            android:id="@+id/placeHolder"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#f00" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
